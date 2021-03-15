@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <title>Spawn Tracker</title>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+document.body.style.backgroundColor = "rgb(249, 250, 251)";
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
