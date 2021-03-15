@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 import RewardsComponent from "./components/RewardsComponent"
 
-const ENDPOINT = process.env.WEBSOCKET_SERVER || "http://127.0.0.1:4001";
+const ENDPOINT = process.env.WEBSOCKET_SERVER || "https://secret-journey-94979.herokuapp.com/";
 
 function App() {
   const [redemptions, setRedemptions] = useState({});
