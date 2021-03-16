@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Helmet } from 'react-helmet';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <title>Spawn Tracker</title>
+    <Helmet>
+      <title>Spawn Tracker</title>
+    </Helmet>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
