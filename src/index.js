@@ -7,9 +7,6 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Helmet>
-      <title>Spawn Tracker</title>
-    </Helmet>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
