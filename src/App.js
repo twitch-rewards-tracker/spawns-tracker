@@ -5,12 +5,14 @@ import RewardsComponent from "./components/RewardsComponent"
 
 const ENDPOINT = process.env.WEBSOCKET_SERVER || "https://rewards-relay.herokuapp.com/";
 
+const STREAMER = process.env.TWITCH_STREAMER || "dismellion"
+
 function App() {
   const [redemptions, setRedemptions] = useState({});
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
-    socket.on("message", message => {
+    socket.on(STREAMER, message => {
       const reward_id = message.data.updated_reward.id;
       setRedemptions(previous => ({ ...previous, [reward_id]: message }));
     });
