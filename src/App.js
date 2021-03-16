@@ -5,7 +5,7 @@ import RewardsComponent from "./components/RewardsComponent"
 
 const ENDPOINT = process.env.WEBSOCKET_SERVER || "https://rewards-relay.herokuapp.com/";
 
-const STREAMER = process.env.TWITCH_STREAMER || "dismellion"
+const STREAMER = process.env.TWITCH_STREAMER || "usteppin"
 
 function App() {
   const [redemptions, setRedemptions] = useState({});
