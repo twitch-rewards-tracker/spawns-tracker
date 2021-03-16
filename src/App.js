@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 import RewardsComponent from "./components/RewardsComponent"
 
-const ENDPOINT = process.env.WEBSOCKET_SERVER || "https://rewards-relay.herokuapp.com/";
+const ENDPOINT = process.env.REACT_APP_WEBSOCKET_SERVER || "https://rewards-relay.herokuapp.com/";
 
-const STREAMER = process.env.TWITCH_STREAMER || "usteppin"
+const STREAMER = process.env.REACT_APP_TWITCH_STREAMER || "usteppin"
 
 function App() {
   const [redemptions, setRedemptions] = useState({});
