@@ -8,7 +8,7 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 
 1. :computer: [Streamers](#streamers)
 2. :camera: [Screenshots](#screenshots)
-3. :handshaking: [Community](#community)
+3. :handshake: [Community](#community)
 4. :heavy_heart_exclamation: [Credits](#credits)
 
 ## Streamers
