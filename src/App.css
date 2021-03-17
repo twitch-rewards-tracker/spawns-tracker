@@ -1,0 +1,19 @@
+.loading:after {
+    content: '\00a0\00a0\00a0';
+    animation: progress-ellipsis 2.5s infinite;
+}
+
+@keyframes progress-ellipsis {
+    0% {
+        content: '\00a0\00a0\00a0';
+    }
+    25% {
+        content: '.\00a0\00a0';
+    }
+    50% {
+        content: '..\00a0';
+    }
+    75% {
+        content: '...';
+    }
+}

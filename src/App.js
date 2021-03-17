@@ -1,7 +1,8 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
-import RewardsComponent from "./components/RewardsComponent"
+import RewardsComponent from "./components/RewardsComponent";
+import RewardsLoadingComponent from "./components/RewardsLoadingComponent";
 
 const ENDPOINT = process.env.REACT_APP_WEBSOCKET_SERVER || "https://127.0.0.1:4001/";
 
@@ -20,11 +21,15 @@ function App() {
     return () => socket.disconnect();
   }, []);
 
+  if (Object.keys(redemptions).length === 0) {
+    return <div class="max-w-screen-lg mx-auto">
+      <RewardsLoadingComponent />
+    </div>
+  }
+
   return (
     <div class="max-w-screen-lg mx-auto">
-      <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3">
-        <RewardsComponent redemptions={redemptions} />
-      </div>
+      <RewardsComponent redemptions={redemptions} />
     </div>
   );
 }

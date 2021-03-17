@@ -6,9 +6,10 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 
 # Contents
 
-1. 🖥️ [Streamers](#streamers)
-3. 📸 [Screenshots](#screenshots)
-2. 🤝 [Community](#community)
+1. :computer: [Streamers](#streamers)
+2. :camera: [Screenshots](#screenshots)
+3. :handshaking: [Community](#community)
+4. :heavy_heart_exclamation: [Credits](#credits)
 
 ## Streamers
 
@@ -17,6 +18,8 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 | [USteppin](https://www.twitch.tv/usteppin) | https://uspawnnin.netlify.app/ | [![Netlify Status](https://api.netlify.com/api/v1/badges/8fff37cf-07f5-4bbf-9967-2ac358f5ed1e/deploy-status)](https://app.netlify.com/sites/uspawnnin/deploys) |
 | [Dismellion](https://www.twitch.tv/dismellion) | https://dismellion-spawns.netlify.app/ | [![Netlify Status](https://api.netlify.com/api/v1/badges/9bb40549-7638-4eac-8a28-13c97b1a1579/deploy-status)](https://app.netlify.com/sites/dismellion-spawns/deploys) |
 
+:warning: If your channel is listed above and you would like your link removed, please let me know!
+
 ## Screenshots
 
 <img src="https://user-images.githubusercontent.com/16789070/111542143-41315500-8769-11eb-8177-b9677f80371a.png" width="350">
@@ -24,3 +27,9 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 ## Community
 
 This is a community project and so any issues, help, or feature suggestions should be submitted in the form of GitHub Issues.
+
+## Credits
+
+[Dismellion](https://www.twitch.tv/dismellion) for letting me test on their chat.
+
+[USteppin](https://www.twitch.tv/usteppin) for the inspiration.
