@@ -19,7 +19,7 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 
 ## Screenshots
 
-![screenshot](https://user-images.githubusercontent.com/16789070/111542143-41315500-8769-11eb-8177-b9677f80371a.png | width=300)
+<img src="https://user-images.githubusercontent.com/16789070/111542143-41315500-8769-11eb-8177-b9677f80371a.png" width="350">
 
 ## Community
 
