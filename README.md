@@ -18,6 +18,7 @@ Find out more about Twitch channels points [here](https://help.twitch.tv/s/artic
 | [USteppin](https://www.twitch.tv/usteppin) | https://uspawnnin.netlify.app/ | [![Netlify Status](https://api.netlify.com/api/v1/badges/8fff37cf-07f5-4bbf-9967-2ac358f5ed1e/deploy-status)](https://app.netlify.com/sites/uspawnnin/deploys) |
 | [Dismellion](https://www.twitch.tv/dismellion) | https://dismellion-spawns.netlify.app/ | [![Netlify Status](https://api.netlify.com/api/v1/badges/9bb40549-7638-4eac-8a28-13c97b1a1579/deploy-status)](https://app.netlify.com/sites/dismellion-spawns/deploys) |
 | [UshankaParty](https://www.twitch.tv/ushankaparty) | https://uspawnkaparty.netlify.app | [![Netlify Status](https://api.netlify.com/api/v1/badges/8fff37cf-07f5-4bbf-9967-2ac358f5ed1e/deploy-status)](https://app.netlify.com/sites/uspawnnin/deploys) |
+| [Zh0s](https://www.twitch.tv/zh0s) | https://watchzhosdie.netlify.app | [![Netlify Status](https://api.netlify.com/api/v1/badges/b25f4440-b051-4cf5-9f24-fc0f274feb8b/deploy-status)](https://app.netlify.com/sites/watchzhosdie/deploys) |
 
 :warning: If your channel is listed above and you would like your link removed, please let me know!
 
@@ -34,3 +35,5 @@ This is a community project and so any issues, help, or feature suggestions shou
 [Dismellion](https://www.twitch.tv/dismellion) for letting me test on their chat.
 
 [USteppin](https://www.twitch.tv/usteppin) for the inspiration.
+
+[Lukasz Adam](https://lukaszadam.com/illustrations) for the cover art.
