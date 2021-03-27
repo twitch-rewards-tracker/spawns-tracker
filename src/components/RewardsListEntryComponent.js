@@ -16,15 +16,17 @@ function RewardsListEntryComponent({ message }) {
         return () => clearTimeout(timer);
     })
 
-    const styles = { divClasses: 'p-6 max-w-xs mx-4 my-2 rounded-xl shadow-md flex self-auto items-center space-x-4' }
+    const styles = { divClasses: 'p-3 my-1 rounded-xl shadow-md flex justify-between items-center min-w-max' }
 
-    return <div class={`${styles.divClasses} ${secondsRemaining <= 0 ? 'bg-green-50' : 'bg-yellow-100'}`}>
-        <div class="flex-shrink-0">
-            <img class="h-10 w-10" src={message.data.updated_reward.image.url_2x} alt="placeholder"></img>
+    return <div class={`${styles.divClasses} ${secondsRemaining <= 0 ? 'bg-green-100' : 'bg-orange-200'}`}>
+        <div class='flex space-x-2 mx-1 items-center'>
+            <div class="flex-shrink-0">
+                <img class="h-6 w-6" src={message.data.updated_reward.image.url_1x} alt="placeholder"></img>
+            </div>
+            <div class="font-medium text-black truncate">{message.data.updated_reward.title}</div>
         </div>
         <div>
-            <div class="text-lg font-medium text-black">{message.data.updated_reward.title}</div>
-            <p class="text-gray-500">{secondsRemaining <= 0 ? "Ready to spawn" : `${Math.floor(secondsRemaining)} seconds remaining`}</p>
+            <p class="font-medium text-sm text-gray-600">{secondsRemaining <= 0 ? "Ready" : `${Math.floor(secondsRemaining)}s`}</p>
         </div>
     </div>
 }
