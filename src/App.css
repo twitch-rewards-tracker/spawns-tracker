@@ -18,6 +18,6 @@
     }
 }
 
-html, body, #root, .App {
-    height: 100%;
+body {
+    background-color: rgba(38, 38, 38)
 }

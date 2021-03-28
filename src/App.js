@@ -23,19 +23,15 @@ function App() {
 
   if (Object.keys(redemptions).length === 0) {
     return (
-      <div class='bg-gray-800'>
-        <div class="max-w-screen-sm mx-auto p-3">
-          <RewardsLoadingComponent />
-        </div>
+      <div class="max-w-screen-sm mx-auto p-3">
+        <RewardsLoadingComponent />
       </div>
     );
   }
 
   return (
-    <div class='bg-gray-800'>
-      <div class="max-w-screen-sm mx-auto p-3">
-        <RewardsComponent redemptions={redemptions} />
-      </div>
+    <div class="max-w-screen-sm mx-auto p-3">
+      <RewardsComponent redemptions={redemptions} />
     </div>
   );
 }
