@@ -3,18 +3,21 @@ import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
 
 const Rewards = ({ rewards }) => {
-  rewards = rewards.sort((a, b) => a.cost - b.cost)
+  const [secondsRemaining, setSecondsRemaining] = useState([])
 
-  const [secondsRemaining, setSecondsRemaining] = useState(rewards.map(reward => {
-    const expires_at_time = new Date(Date.parse(reward.cooldown_expires_at));
-    return (expires_at_time - Date.now()) / 1000;
-  }))
+  useEffect(() => {
+    setSecondsRemaining(rewards
+      .sort((a, b) => a.cost - b.cost)
+      .map(reward => {
+        const expires_at_time = new Date(Date.parse(reward.cooldown_expires_at));
+        return (expires_at_time - Date.now()) / 1000;
+      }))
+  }, [rewards])
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setSecondsRemaining(secondsRemaining.map((seconds) => seconds - 1));
+      setSecondsRemaining(secondsRemaining.map(seconds => Math.max(0, seconds - 1)));
     }, 1000);
-    // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
   })
 
