@@ -1,10 +1,14 @@
 import RewardsListEntryComponent from "./RewardsListEntryComponent";
 
-const RewardsComponent = ({ redemptions }) => {
-  var values = Object.keys(redemptions).map(key => redemptions[key]).sort((a, b) => a.data.updated_reward.cost - b.data.updated_reward.cost);
-  return <div class="flex flex-col">
-    {values.map(redemption => (
-      <RewardsListEntryComponent message={redemption} key={redemption.data.updated_reward.id} />
+const RewardsComponent = ({ messages }) => {
+  var values = Object.keys(messages).map(key => messages[key]).sort((a, b) => a.data.updated_reward.cost - b.data.updated_reward.cost);
+
+  return <div className="flex flex-col">
+    {values.map(message => (
+      <RewardsListEntryComponent
+        reward={message.data.updated_reward}
+        key={message.data.updated_reward.id}
+      />
     ))}
   </div>
 }

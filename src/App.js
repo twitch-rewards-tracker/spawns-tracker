@@ -9,29 +9,29 @@ const ENDPOINT = process.env.REACT_APP_WEBSOCKET_SERVER || "https://127.0.0.1:40
 const STREAMER = process.env.REACT_APP_TWITCH_STREAMER || "chowder_0"
 
 function App() {
-  const [redemptions, setRedemptions] = useState({});
+  const [messages, setMessages] = useState({});
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
     socket.on(STREAMER, message => {
       const reward_id = message.data.updated_reward.id;
-      setRedemptions(previous => ({ ...previous, [reward_id]: message }));
+      setMessages(previous => ({ ...previous, [reward_id]: message }));
     });
 
     return () => socket.disconnect();
   }, []);
 
-  if (Object.keys(redemptions).length === 0) {
+  if (Object.keys(messages).length === 0) {
     return (
-      <div class="max-w-screen-sm mx-auto p-3">
+      <div className="max-w-screen-sm mx-auto p-3">
         <RewardsLoadingComponent />
       </div>
     );
   }
 
   return (
-    <div class="max-w-screen-sm mx-auto p-3">
-      <RewardsComponent redemptions={redemptions} />
+    <div className="max-w-screen-sm mx-auto p-3">
+      <RewardsComponent messages={messages} />
     </div>
   );
 }
