@@ -1,4 +1,4 @@
-const LoadingMessageComponent = () => (
+const LoadingMessage = () => (
     <div>
         <div className="p-2 items-center leading-none flex">
             <span className="font-semibold font-sans text-gray-300 text-left flex-auto loading">
@@ -9,7 +9,7 @@ const LoadingMessageComponent = () => (
 
 )
 
-const PlaceholderRewardsComponent = () => (
+const RewardPlaceholder = () => (
     <div className="p-6 max-w-xs mx-4 my-2 rounded-xl shadow-md bg-blue-300">
         <div className="animate-pulse flex self-auto items-center space-x-4">
             <div className="flex-shrink-0">
@@ -24,13 +24,13 @@ const PlaceholderRewardsComponent = () => (
 )
 
 
-const RewardsLoadingComponent = () => (
+const Loading = () => (
     <div className="flex h-screen justify-center items-center">
         <div className="flex flex-col items-center">
-            <LoadingMessageComponent />
-            <PlaceholderRewardsComponent />
+            <LoadingMessage />
+            <RewardPlaceholder />
         </div>
     </div>
 )
 
-export default RewardsLoadingComponent;
+export default Loading;
