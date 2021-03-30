@@ -25,7 +25,7 @@ const Rewards = ({ rewards }) => {
     {rewards.map((reward, i) => (
       <Reward
         title={reward.title}
-        image={reward.image.url_1x}
+        image={reward.image === null ? reward.default_image.url_1x : reward.image.url_1x}
         secondsRemaining={secondsRemaining[i]}
         key={reward.id}
       />
