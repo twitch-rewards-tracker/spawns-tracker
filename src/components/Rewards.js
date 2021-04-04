@@ -2,7 +2,7 @@ import Reward from "./Reward";
 import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
 
-const DISPLAY_READY_COOLDOWNS = process.env.REACT_APP_DISPLAY_READY_COOLDOWNS | true;
+const DISPLAY_READY_COOLDOWNS = (process.env.REACT_APP_DISPLAY_READY_COOLDOWNS === "true");
 
 const Rewards = ({ rewards }) => {
   const [secondsRemaining, setSecondsRemaining] = useState([])
@@ -25,7 +25,7 @@ const Rewards = ({ rewards }) => {
 
   return <div className="flex flex-col">
     {rewards.map((reward, i) => (
-      (REACT_APP_DISPLAY_READY_COOLDOWNS && secondsRemaining[i] > 0) ?
+      (DISPLAY_READY_COOLDOWNS && secondsRemaining[i] > 0) ?
         <Reward
           title={reward.title}
           image={reward.image === null ? reward.default_image.url_1x : reward.image.url_1x}
