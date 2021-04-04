@@ -25,7 +25,7 @@ const Rewards = ({ rewards }) => {
 
   return <div className="flex flex-col">
     {rewards.map((reward, i) => (
-      (DISPLAY_READY_COOLDOWNS && secondsRemaining[i] > 0) ?
+      (DISPLAY_READY_COOLDOWNS || secondsRemaining[i] > 0) ?
         <Reward
           title={reward.title}
           image={reward.image === null ? reward.default_image.url_1x : reward.image.url_1x}
