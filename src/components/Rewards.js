@@ -2,7 +2,7 @@ import Reward from "./Reward";
 import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
 
-const DISPLAY_READY_COOLDOWNS = (process.env.REACT_APP_DISPLAY_READY_COOLDOWNS === "true");
+const DISPLAY_READY_COOLDOWNS = ((process.env.REACT_APP_DISPLAY_READY_COOLDOWNS | "true") === "true");
 
 const Rewards = ({ rewards }) => {
   const [secondsRemaining, setSecondsRemaining] = useState([])
